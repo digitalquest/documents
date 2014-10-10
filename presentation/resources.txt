@@ -1,0 +1,15 @@
+https://www.getpantheon.com/how-it-works
+
+run.qwiklabs.com
+
+s4mmy
+
+awsstudent
+
+
+https://github.com/awslabs/opsworks-demo-rails-photo-share-app.git
+
+
+https://github.com/amazonwebservices/opsworks-demo-php-simple-app
+
+https://github.com/amazonwebservices/opsworks-demo-php-photo-share-app

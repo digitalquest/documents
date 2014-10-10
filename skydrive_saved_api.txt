@@ -1,0 +1,7 @@
+
+Client ID:
+0000000044128C77
+This is a unique identifier for your application.
+Client secret (v1):
+plpgpBV5hNdMSRC9DmHVZcxQ8Qi5eAt3
+For security purposes, don't share your client secret with anyone.
