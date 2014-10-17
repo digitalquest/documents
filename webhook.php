@@ -5,7 +5,7 @@ ini_set("error_log", "hook.log");   //use this to log errors that are found in t
 error_reporting(E_ALL);
 ignore_user_abort(true);            //don't want users screwing up the processing of the script by stopping it mid-process
  
-$wd = "/var/www/firstproject";      //this is the only thing that needs to change from project to project
+$wd = "/data/www/html";      //this is the only thing that needs to change from project to project
  
 //I'm sure there are other ways of handling the system call, this is just the method I've chosen
 //setup the function to make the system call where $cwd is the "Current Working Directory"
@@ -19,27 +19,20 @@ function syscall ($cmd, $cwd) {
            return $output;
     }
 }
- 
+//name of the git repository
+$repo = integration;
+//name of the working branch
+$our_branch = MOODLE_26_SRABLE; 
+
 try{
   //I fumbled around for awhile to finally find this part: GitLab uses the $HTPP_RAW_POST_DATA server variable to house its JSON data meaning your typical $_REQUEST, $_POST, and $_GET will be EMPTY!
   if( $HTTP_RAW_POST_DATA ){
     if( $oData = json_decode( $HTTP_RAW_POST_DATA ) ){ //transform the string into an object so we can get to the 'ref' element
       //now we want to split the ref string on "/", pop off the last element of the array (which will be the branch name), and do one quick validation to make sure a branch name actually exists
       //the actual 'ref' string will look like this: 'refs/heads/master' (or whatever branch was just pushed to instead of master)
-      if( ( $branch = array_pop( preg_split("/[\/]+/", $oData->ref) ) ) != "heads" ){
-           if( is_dir( "$wd/$branch" ) ){   //lets check if branch dir exists
-              //hey look, the branch directory already exists, so lets use it as our working directory and just run the pull command -- obviously we want to pull from the remote origin &amp; branch name
-              $result = syscall("git pull origin $branch", "$wd/$branch");
-           } else {
-              //if branch dir doesn't exist, create it with a clone
-              $result = syscall("git clone ssh://git@git.kernelops.com:443/cfarmer/firstproject.git $branch", $wd);
-              //change dir to the clone directory, and checkout the branch
-              $result = syscall("git checkout $branch", "$wd/$branch");
-           }
-           return 1; //this isn't necessary but I put it here for good measure, just to say we are done and everything got executed properly
-      } else {
-        throw new Exception("branch variable is not set or == to 'heads'");
-      }
+		$result = syscall("git pull $repo $our_branch", "$wd");
+		return 1; //this isn't necessary but I put it here for good measure, just to say we are done and everything got executed properly
+       
     } else {
       throw new Exception("An error was encountered while attempting to json_decode the HTTP_RAW_POST_DATA str");
     }
