@@ -1,0 +1,48 @@
+"deploy": {
+  "simplephpapp": {
+    "sleep_before_restart": 0,
+    "rails_env": null,
+    "document_root": "web",
+    "deploy_to": "/srv/www/simplephpapp",
+    "ssl_certificate_key": null,
+    "ssl_certificate": null,
+    "deploying_user": null,
+    "ssl_certificate_ca": null,
+    "ssl_support": false,
+    "migrate": false,
+    "mounted_at": null,
+    "application": "simplephpapp",
+    "auto_bundle_on_deploy": true,
+    "database": {
+        "reconnect": true,
+        "database": "simplephpapp",
+        "host": null,
+        "adapter": "mysql",
+        "data_source_provider": "stack",
+        "password": "d1zethv0sm",
+        "port": 3306,
+        "username": "root"
+    },
+    "scm": {
+      "revision": "version2",
+      "scm_type": "git",
+      "user": null,
+      "ssh_key": null,
+      "password": null,
+      "repository": "git://github.com/amazonwebservices/opsworks-demo-php-simple-app.git"
+    },
+    "symlink_before_migrate": {
+      "config/opsworks.php": "opsworks.php"
+    },
+    "application_type": "php",
+    "domains": [
+      "simplephpapp"
+    ],
+    "memcached": {
+      "port": 11211,
+      "host": null
+    },
+    "symlinks": {
+    },
+    "restart_command": "echo 'restarting app'"
+  }

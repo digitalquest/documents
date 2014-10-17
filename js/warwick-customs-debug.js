@@ -1,7 +1,18 @@
 $(document).ready(function()
 {
+	var href = $(location).attr('href');
+	//var pathname = $(location).attr('pathname');
+	//var hash = $(location).attr('hash');
+	//var search = $(location).attr('search');
+	//alert ( 'herf:' + href + ' pathname:' + pathname );
+	
+	var pageQuickGrade = 'http://';
+	var pageGrade = 'http://';
+	
+	if ( href == pageQuickGrade  ) { alert ( 'herf:' + href );}
+		
 	$("#id_sendstudentnotifications").val('0'); //set value of 'Notify student' to 'No'. Should be 'No' by default
-	alert( "initial workflowstate is" + $("#id_workflowstate").val() );
+	//alert( "initial workflowstate is" + $("#id_workflowstate").val() );
 	
 	if ( $("#id_workflowstate").val()!="released" ) { // workflow isnt't Released
         hide_notify();

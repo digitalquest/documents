@@ -57,3 +57,22 @@ Both built-in and custom recipes can be used as part of the layers. Users can al
 
 
 integrates with resources such as S3 (Simple Storage Service) and Amazon RDS (Relational Database Service)
+
+
+AWS OpsWorks provides a simple and flexible way to create and manage stacks and applications. It supports a standard set of components—including application servers, database servers, load balancers, and more
+
+You can start instances in several ways.
+-24/7 instances are started manually and run until you stop them.
+-Load-based instances are automatically started and stopped by AWS OpsWorks, based on specified load metrics, such as CPU utilization.
+-Time-based instances are run by AWS OpsWorks on a specified daily and weekly schedule.
+
+Security and Permissions
+AWS OpsWorks integrates with AWS Identity and Access Management (IAM) to provide robust ways of controlling how users access AWS OpsWorks
+
+
+Monitoring and Logging
+AWS OpsWorks provides several features to help you monitor your stack and troubleshoot issues with your stack and any custom recipes
+
+CLI, SDK, and AWS CloudFormation Templates
+In addition to the graphical console, AWS OpsWorks also supports a command-line interface (CLI) and SDKs for multiple languages that can be used to perform any operation.
+
