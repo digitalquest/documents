@@ -1,0 +1,15 @@
+Activities:
+lightboxgallery
+assignment 2.2
+OU blog
+OU wiki
+Scheduler
+questionnaire
+--
+course format:
+grid format
+collapsed topic 
+--
+Blocks:
+--
+Enrolment:
