@@ -1,0 +1,13 @@
+def absolute_value(n):
+    if n < 0:
+        n = -n
+    return n
+	
+	def hello():
+    print("Hello")
+ 
+def area(width, height):
+    return width * height
+ 
+def print_welcome(name):
+    print("Welcome", name)

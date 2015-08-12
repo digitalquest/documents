@@ -1,0 +1,19 @@
+Square in Python 3
+
+Write a Python 3 function mysqr(n) that return the square of its numeric parameter n
+
+
+print(mysqr(0))
+0
+
+
+Hello in Python 2
+Write a Python 2 function greetings(name) that takes a string name and prints "Hello name!"
+print(greetings('Jerry'))
+Hello Jerry!
+
+print(greetings('Thomas'))
+Hello Thomas!
+
+def greetings(name):
+    print "Hello " + name + "!"

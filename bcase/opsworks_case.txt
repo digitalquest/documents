@@ -1,0 +1,78 @@
+
+Universities using OpsWorks
+Anhanguera
+http://www.anhanguera.com/
+About Anhanguera
+Founded in 1973, Anhanguera is one of the largest universities in Brazil and one of the largest in the world, offering over 500,000 undergraduate and postgraduate courses. The university has over 70 campuses throughout Brazil, and hundreds of offices supporting distance learning. Anhanguera University has more than 10,000 teachers and over 6,000 administrative staff.
+
+The Challenge
+Anhanguera is one of the world’s largest users of Moodle, an e-learning platform that that allows students and teachers to work collaboratively online. Moodle is available to all students and has millions of hits per week as students, teachers, and administrators use the platform. The IT department at the university developed an extensive data center to manage the volume of users and content. However, as the university continued to grow at a rapid pace, it became increasingly difficult for IT to deliver Moodle and other applications reliably. Anhanguera looked for a more reliable and flexible alternative with the ability to grow.
+
+Why Amazon Web Services
+Anhanguera decided to build a cloud environment using Amazon Web Services for increased reliability and scalability.
+
+The Benefits
+Anhanguera credits AWS and the integration work for improving the reliability of Moodle and other critical applications.
+Anhanguera saw a significant cost reduction in comparison with the previous scenario on-premises.
+“The changes that AWS brought to Anhanguera have increased the confidence of end users who rely on our applications.”
+
+
+Better control over deployment , scaling, monitoring and automation
+
+
+
+updates -> bug fix
+upgrades
+backups 
+ when done
+ access to them for restore
+performance ->scaling at peak times
+metrics
+redundancy
+better replication of dev and test environments
+better in-house support from our own teams
+accountability: who has done what
+
+load balancing, auto scaling
+security: permissions
+
+
+full control of software on EC2 instances and integrates with resources such as S3 (Simple Storage Service) and Amazon RDS (Relational Database Service)
+
+
+In house??
+OpsWorks is a higher-level service
+
+It can be used for resource provisioning, configuration management, application deployment, software updates, monitoring, and access control at no extra cost through the AWS Management Console, SDKs, and Command Line Interface
+
+Applications, user permissions, and other resources are controlled in the context of the Stack.
+
+Within a stack, users define layers that describe how to provision and configure instances. A layer can, for example, specify what packages to install, which security groups to add and Elastic IP addresses to assign
+
+caching platform Memcached, and MySQL are included,
+
+The platform uses Opscode Chef recipes to handle the mechanics of setting up and configuring instances, deploying applications
+
+Both built-in and custom recipes can be used as part of the layers. Users can also take advantage of hundreds of community-built configurations,
+
+
+integrates with resources such as S3 (Simple Storage Service) and Amazon RDS (Relational Database Service)
+
+
+AWS OpsWorks provides a simple and flexible way to create and manage stacks and applications. It supports a standard set of components—including application servers, database servers, load balancers, and more
+
+You can start instances in several ways.
+-24/7 instances are started manually and run until you stop them.
+-Load-based instances are automatically started and stopped by AWS OpsWorks, based on specified load metrics, such as CPU utilization.
+-Time-based instances are run by AWS OpsWorks on a specified daily and weekly schedule.
+
+Security and Permissions
+AWS OpsWorks integrates with AWS Identity and Access Management (IAM) to provide robust ways of controlling how users access AWS OpsWorks
+
+
+Monitoring and Logging
+AWS OpsWorks provides several features to help you monitor your stack and troubleshoot issues with your stack and any custom recipes
+
+CLI, SDK, and AWS CloudFormation Templates
+In addition to the graphical console, AWS OpsWorks also supports a command-line interface (CLI) and SDKs for multiple languages that can be used to perform any operation.
+

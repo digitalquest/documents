@@ -1,0 +1,37 @@
+AWS OpsWorks
+AWS OpsWorks is a cloud application management service that makes it easy to deploy and operate applications of all shapes and sizes. 
+
+You can define the application’s architecture and the specification of each component including package installation, 
+software configuration and resources such as storage. 
+Start from templates for common technologies like application servers and databases 
+or build your own to perform any task that can be scripted. 
+AWS OpsWorks includes automation to scale your application based on time or load and dynamic configuration 
+to orchestrate changes as your environment scales.
+
+
+App Deployment
+You can pull your code from a repository and install it on one or all of your instances. 
+You can have multiple applications in a stack that are configured to work together as a system.
+
+Auto Healing
+If an instance fails, AWS OpsWorks can replace it with a new one.
+
+Automatic Instance Scaling
+You can adapt the number of running instances to match your load, with time- or load-based auto scaling. 
+The instances in your pool can vary in size, letting you scale gradually or quickly. 
+This allows you to handle load spikes and save money by only using exactly what is needed.
+
+Monitoring
+AWS OpsWorks sends all of your resource metrics to Amazon CloudWatch, 
+making it easy to view graphs and set alarms to help you troubleshoot and take automated action based on the state of your resources. 
+
+The AWS Free Tier enables hands-on experience with Amazon Web Services at no charge for 12 months after you sign up.
+
+After creating your AWS account you can use any of the 18 products and services, listed below, for free within certain usage limits.
+
+
+AWS OpsWorks Pricing
+There is no additional charge for AWS OpsWorks. 
+You pay for AWS resources (e.g. EC2 instances, EBS volumes, Elastic IP addresses) created using OpsWorks in the same manner 
+as if you created them manually.  With all AWS services, you only pay for what you use, as you use it; 
+there are no minimum fees and no upfront commitments.
